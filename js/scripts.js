@@ -4,12 +4,13 @@ $(document).ready(function() {
 
     if (ageInput < 18) {
       alert("We are excited you want to vote! Unfortunately, you must be 18 years old or older.");
+      $("#vote-info").show();
     } else if (ageInput === 18) {
       alert("Hooray! You are exercising your right to vote. Choose your county.");
-      $("#area").show();
+      $("#area-form").show();
     } else {
       alert("Choose your county.");
-      $("#area").show();
+      $("#area-form").show();
     };
     event.preventDefault();
   });
